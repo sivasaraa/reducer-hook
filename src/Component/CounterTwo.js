@@ -1,12 +1,14 @@
 import React, { useReducer } from 'react'
 
-const initialState = 0
+const initialState = {
+    count : 0
+}
 const reducer = (state, action) => {
     switch(action){
         case 'increment':
-            return state + 1
+            return {count : state.count + 1}
         case 'decrement' :
-            return state - 1
+            return {count : state.count - 1}
         case 'reset':
             return initialState
         default:
@@ -15,11 +17,11 @@ const reducer = (state, action) => {
 }
 
 function CounterTwo() {
-    const [count, dispatch] = useReducer(reducer, initialState)
+    const [newState, dispatch] = useReducer(reducer, initialState)
 
     return (
         <div>
-            <div>Count - {count}</div>
+            <div>Count - {newState.count}</div>
             <button onClick={() => dispatch('increment')}>Increment</button>
             <button onClick={() => dispatch('decrement')}>Decrement</button>
             <button onClick={() => dispatch('reset')}>Reset</button>
