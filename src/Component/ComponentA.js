@@ -5,7 +5,7 @@ function ComponentA(){
     const context = useContext(countContext)
     return (
         <div>
-            ComponentA - {context.count}
+            ComponentA
             <button onClick={() => context.dispatch('increment')}>Increment</button>
             <button onClick={() => context.dispatch('decrement')}>Decrement</button>
             <button onClick={() => context.dispatch('reset')}>Reset</button>

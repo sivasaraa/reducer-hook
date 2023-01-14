@@ -33,6 +33,7 @@ function App() {
       {/* <CounterOne /> */}
       {/* <CounterTwo /> */}
       {/* <CounterThree /> */}
+      {count}
       <ComponentA />
       <ComponentB />
       <ComponentC />
