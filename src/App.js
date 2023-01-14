@@ -9,6 +9,7 @@ import ComponentB from './Component/ComponentB';
 import { useReducer } from 'react';
 import ComponentC from './Component/ComponentC';
 import DataFetchingOne from './Component/DataFetchingOne';
+import DataFetchingTwo from './Component/DataFetchingTwo';
 
 const initialState = 0
 const reducer = (state, action) => {
@@ -38,7 +39,8 @@ function App() {
       <ComponentA />
       <ComponentB />
       <ComponentC /> */}
-      <DataFetchingOne />
+      {/* <DataFetchingOne /> */}
+      <DataFetchingTwo />
     </div>
     // </countContext.Provider>
   );
