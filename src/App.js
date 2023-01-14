@@ -6,8 +6,8 @@ import CounterTwo from './Component/CounterTwo';
 import CounterThree from './Component/CounterThree';
 import ComponentA from './Component/ComponentA';
 import ComponentB from './Component/ComponentB';
-import ComponentC from './Component/ComponentC';
 import { useReducer } from 'react';
+import ComponentC from './Component/ComponentC';
 
 const initialState = 0
 const reducer = (state, action) => {
@@ -38,7 +38,6 @@ function App() {
       <ComponentB />
       <ComponentC />
     </div>
-
     </countContext.Provider>
   );
 }

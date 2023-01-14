@@ -1,11 +1,14 @@
-import React from 'react'
+import React, { useContext, useReducer } from 'react'
+import { countContext } from '../App'
 
 function ComponentF(){
+    const context = useContext(countContext)
     return (
         <div>
-            <button>Increment</button>
-            <button>Decrement</button>
-            <button>Reset</button>
+            ComponentF
+            <button onClick={() => context.dispatch('increment')}>Increment</button>
+            <button onClick={() => context.dispatch('decrement')}>Decrement</button>
+            <button onClick={() => context.dispatch('reset')}>Reset</button>
         </div>
     )
 }
